@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Modal with Date and Time Pickers</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="componentStyle.css">
+</head>
+<body>
+
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalLong">
+  Modal
+</button>
+
+<div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Create A Calendar</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-row align-items-center">
+            <div class="col">
+              <label for="startDate">Start Date:</label>
+              <input type="date" class="form-control" id="startDate">
+            </div>
+            <div class="col-auto date-arrow">
+              <!-- Arrow between dates -->
+            </div>
+            <div class="col">
+              <label for="endDate">End Date:</label>
+              <input type="date" class="form-control" id="endDate">
+            </div>
+          </div>
+          <div class="form-row align-items-center mt-3">
+            <div class="col">
+              <label for="startTime">First Available Time:</label>
+              <select class="form-control" id="startTime">
+
+              </select>
+            </div>
+            <div class="col-auto time-arrow">
+              <!-- Arrow between times -->
+            </div>
+            <div class="col">
+              <label for="endTime">Last Available Time:</label>
+              <select class="form-control" id="endTime">
+
+              </select>
+            </div>
+          </div>
+          <div class="form-group mt-3">
+            <label for="invitePeople">Invite People:</label>
+            <input type="email" class="form-control" id="invitePeople" placeholder="Enter email addresses">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Create</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="componentScript.js"></script>
+  
+</body>
+</html>
