@@ -21,7 +21,7 @@ document.getElementById('addContactForm').addEventListener('submit', function(ev
     // Create contact card
     const contactList = document.getElementById('contactList');
     const contactCard = document.createElement('div');
-    contactCard.classList.add('card', 'contact-card');
+    contactCard.classList.add('card', 'contact-card', 'shadow');
     contactCard.innerHTML = `
       <div class="card-body">
         <div class="row align-items-center">
@@ -29,7 +29,7 @@ document.getElementById('addContactForm').addEventListener('submit', function(ev
             <input type="checkbox" class="form-check-input" id="checkbox-${name}">
           </div>
           <div class="col-auto">
-            <img src="https://via.placeholder.com/150" class="rounded-circle" alt="Profile Picture">
+            <img src="../Images/image-placeholder-icon-11.png" class="rounded-circle" alt="Profile Picture" style="width: 100px; height: 100px;">
           </div>
           <div class="col">
             <h5 class="card-title">${name}</h5>
